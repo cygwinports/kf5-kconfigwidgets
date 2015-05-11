@@ -1,0 +1,27 @@
+inherit kf5
+
+NAME="kf5-kconfigwidgets"
+VERSION=5.9.0
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="KDE 5 configuration dialog widget library"
+DESCRIPTION="KConfigWidgets provides easy-to-use classes to create configuration
+dialogs, as well as a set of widgets which uses KConfig to store their settings."
+
+PKG_NAMES="libKF5ConfigWidgets5 libKF5ConfigWidgets-devel"
+libKF5ConfigWidgets5_CONTENTS="
+	usr/bin/cygKF5ConfigWidgets-5.dll
+	usr/share/doc/
+	usr/share/kf5/kconfigwidgets/
+	usr/share/locale/
+"
+libKF5ConfigWidgets_devel_REQUIRES="libKF5Auth-devel libKF5Codecs-devel libKF5Config-devel libKF5CoreAddons-devel libKF5GuiAddons-devel libKF5I18n-devel libKF5WidgetsAddons-devel libQt5Core-devel libQt5Gui-devel"
+libKF5ConfigWidgets_devel_CONTENTS="
+	usr/bin/preparetips5
+	usr/include/KF5/KConfigWidgets/
+	usr/include/KF5/kconfigwidgets_version.h
+	usr/lib/cmake/KF5ConfigWidgets/
+	${QT5_MKSPECSDIR#/}/modules/qt_KConfigWidgets.pri
+	usr/lib/libKF5ConfigWidgets.dll.a
+	usr/share/man/man1/preparetips5.*
+"
