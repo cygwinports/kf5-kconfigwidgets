@@ -1,7 +1,7 @@
 inherit kf5
 
 NAME="kf5-kconfigwidgets"
-VERSION=5.39.0
+VERSION=5.43.0
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="KDE 5 configuration dialog widget library"
@@ -10,6 +10,7 @@ dialogs, as well as a set of widgets which uses KConfig to store their settings.
 
 PKG_NAMES="libKF5ConfigWidgets5 libKF5ConfigWidgets-devel"
 libKF5ConfigWidgets5_CONTENTS="
+	etc/xdg/kconfigwidgets.categories
 	usr/bin/cygKF5ConfigWidgets-5.dll
 	usr/share/doc/
 	usr/share/locale/
